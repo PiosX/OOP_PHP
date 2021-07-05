@@ -7,14 +7,11 @@
     <title>Index Page</title>
 </head>
 <body>
-    <div id="top-cont">
-    
-    </div>
-    <div id="mid-cont">
-
-    </div>
-    <div id="bot-cont">
-
-    </div>
+    <?php
+    require_once("classes/dbh.class.php");
+    require_once("classes/test.class.php");
+        $testObj = new Test();
+        $testObj->setUsersStmt("Master", "nikki@op.pl", "amazing123");
+    ?>
 </body>
 </html>
