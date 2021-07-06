@@ -1,3 +1,6 @@
+<?php
+    include "includes/autoloader.inc.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,16 +11,11 @@
 </head>
 <body>
     <?php
-    require_once("classes/dbh.class.php");
-    require_once("classes/test.class.php");
-    require_once("classes/users.calss.php");
-    require_once("classes/userscontr.class.php");
-    require_once("classes/usersview.class.php");
         $testObj = new UsersView();
         $testObj->showUser("Pios");
     
         $testObj2 = new UsersContr();
-        $testObj2->createUser("Marie","annn@gmail.com", "password12");
+        //$testObj2->createUser("Marie","annn@gmail.com", "password12");
     ?>
 </body>
 </html>
