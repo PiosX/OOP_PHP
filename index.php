@@ -10,8 +10,14 @@
     <?php
     require_once("classes/dbh.class.php");
     require_once("classes/test.class.php");
-        $testObj = new Test();
-        $testObj->setUsersStmt("Master", "nikki@op.pl", "amazing123");
+    require_once("classes/users.calss.php");
+    require_once("classes/userscontr.class.php");
+    require_once("classes/usersview.class.php");
+        $testObj = new UsersView();
+        $testObj->showUser("Pios");
+    
+        $testObj2 = new UsersContr();
+        $testObj2->createUser("Marie","annn@gmail.com", "password12");
     ?>
 </body>
 </html>
