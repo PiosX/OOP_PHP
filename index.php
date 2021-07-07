@@ -16,6 +16,10 @@
     
         $testObj2 = new UsersContr();
         //$testObj2->createUser("Marie","annn@gmail.com", "password12");
+
+        $testObj3 = new Person("Pios", "brown", "20");
+        echo $testObj3->getName("Macc");
+        unset($testObj3);
     ?>
 </body>
 </html>
