@@ -11,6 +11,18 @@
     <title>Index Page</title>
 </head>
 <body>
+    <form action="includes/calc.inc.php" method="post">
+        <p>Calculator</p>
+        <input type="number" name="num1" placeholder="First number">
+        <select name="oper">
+            <option value="add">Addition</option>
+            <option value="sub">Substraction</option>
+            <option value="div">Division</option>
+            <option value="mul">Multiplication</option>
+        </select>
+        <input type="number" name="num2" placeholder="Second number">
+        <input type="submit" name="submit" value="Calculate">
+    </form>
     <?php
         //$testObj = new UsersView();
         //$testObj->showUser("Pios");
@@ -36,6 +48,7 @@
             echo $e->getMessage();
         }
     */
+        
     ?>
 </body>
 </html>
