@@ -1,4 +1,5 @@
 <?php
+    declare(strict_types = 1);
     include "includes/autoloader.inc.php";
 ?>
 <!DOCTYPE html>
@@ -11,15 +12,30 @@
 </head>
 <body>
     <?php
-        $testObj = new UsersView();
-        $testObj->showUser("Pios");
+        //$testObj = new UsersView();
+        //$testObj->showUser("Pios");
     
-        $testObj2 = new UsersContr();
+        //$testObj2 = new UsersContr();
         //$testObj2->createUser("Marie","annn@gmail.com", "password12");
 
-        $testObj3 = new Person("Pios", "brown", "20");
-        echo $testObj3->getName("Macc");
-        unset($testObj3);
+        //$testObj3 = new Person("Pios", "brown", "20");
+        //echo $testObj3->getName("Macc");
+        //unset($testObj3);
+
+        //echo Person::$drinkingAge;
+       // PERSON::setDrinkingAge(18);
+        //echo Person::$drinkingAge;
+    /*
+        $testObj4 = new Person();
+        try
+        {
+            $testObj4->setName(2);
+            echo $testObj4->getName();
+        }catch(TypeError $e)
+        {
+            echo $e->getMessage();
+        }
+    */
     ?>
 </body>
 </html>

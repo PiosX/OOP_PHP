@@ -2,9 +2,12 @@
 
 class Person 
 {
+    //properties
     protected $name;
     private $eyeColor;
     private $age; 
+
+    public static $drinkingAge = 21;
 
     public function __construct($name, $eyeColor, $age)
     {
@@ -13,7 +16,8 @@ class Person
         $this->age= $age;
     }
 
-    public function setName($name)
+    //methods
+    public function setName(string $name)
     {
         $this->name = $name;
     }
@@ -26,5 +30,15 @@ class Person
     public function getName()
     {
         return $this->name;
+    }
+
+    public static function setDrinkingAge(int $newDA)
+    {
+        self::$drinkingAge = $newDA;
+    }
+
+    public function getDA()
+    {
+        return self::$drinkingAge;
     }
 }
