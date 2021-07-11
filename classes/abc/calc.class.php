@@ -1,4 +1,5 @@
 <?php
+namespace Classes\abc;
     class Calc
     {
         public $operator;

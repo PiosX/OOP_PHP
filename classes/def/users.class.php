@@ -1,5 +1,6 @@
 <?php
-
+namespace Classes\def;
+use PDO;
     class Users extends Dbh
     {
         protected function getUser($login)

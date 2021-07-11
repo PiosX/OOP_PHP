@@ -1,5 +1,5 @@
 <?php
-
+namespace Classes\def;
     class UsersView extends Users
     {
         public function showUser($login)

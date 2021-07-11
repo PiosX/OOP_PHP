@@ -1,0 +1,10 @@
+{
+    "autoload": {
+        "psr-4":{
+            "classes\\": "Classes/"
+        },
+
+        "classmap": ["Classes/Abc", "Classes/Def"]
+        
+    }
+}

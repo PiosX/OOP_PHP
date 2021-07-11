@@ -25,13 +25,12 @@ function myAutoLoader($className)
 
     if(strpos($url, 'includes') != false)
     {
-        $path = '../classes/abc/';
+        $path = '../classes/def/';
     }
     else
     {
-        $path = 'classes/abc/';
+        $path = 'classes/def/';
     }
     $extension = '.class.php';
-    require_once $path.$className.$extension;
+    include $path.$className.$extension;
 }
-

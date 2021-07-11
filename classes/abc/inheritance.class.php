@@ -1,5 +1,5 @@
 <?php
-
+namespace Classes\abc;
 class Person 
 {
     protected $first = "Pios";

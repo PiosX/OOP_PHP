@@ -1,6 +1,7 @@
 <?php
     declare(strict_types = 1);
-    include "includes/autoloader.inc.php";
+    require_once ("vendor/autoload.php");
+    use \Classes\def\UsersContr;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +12,7 @@
     <title>Index Page</title>
 </head>
 <body>
-    <form action="includes/calc.inc.php" method="post">
+    <form action="#" method="post">
         <p>Calculator</p>
         <input type="number" name="num1" placeholder="First number">
         <select name="oper">
@@ -27,13 +28,15 @@
         $testObj2 = new UsersContr();
         $testObj2->createUser("Marie","annn@gmail.com", "password12");
 
-        $testObj3 = new Person("Pios", "brown", "20");
+        $testObj3 = new \Classes\def\Person("Pios", "brown", "20");
         echo $testObj3->getName("Macc");
         unset($testObj3);
 
-        echo Person::$drinkingAge;
-        PERSON::setDrinkingAge(18);
-        echo Person::$drinkingAge;
+        echo \Classes\def\Person::$drinkingAge;
+        \Classes\def\PERSON::setDrinkingAge(18);
+        echo \Classes\def\Person::$drinkingAge;
+
+        require_once("includes/calc.inc.php");
     /*
         $testObj4 = new Person();
         try

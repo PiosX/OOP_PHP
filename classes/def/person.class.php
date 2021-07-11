@@ -1,5 +1,5 @@
 <?php
-
+namespace Classes\def;
 class Person 
 {
     //properties
