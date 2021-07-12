@@ -21,14 +21,14 @@ class ComposerStaticInit45f765980c34e0b9123492a84ad0ff91
     );
 
     public static $classMap = array (
-        'Classes\\abc\\Calc' => __DIR__ . '/../..' . '/Classes/Abc/calc.class.php',
-        'Classes\\abc\\Person' => __DIR__ . '/../..' . '/Classes/Abc/inheritance.class.php',
-        'Classes\\abc\\Pet' => __DIR__ . '/../..' . '/Classes/Abc/inheritance.class.php',
-        'Classes\\def\\Dbh' => __DIR__ . '/../..' . '/Classes/Def/dbh.class.php',
-        'Classes\\def\\Person' => __DIR__ . '/../..' . '/Classes/Def/person.class.php',
-        'Classes\\def\\Users' => __DIR__ . '/../..' . '/Classes/Def/users.class.php',
-        'Classes\\def\\UsersContr' => __DIR__ . '/../..' . '/Classes/Def/userscontr.class.php',
-        'Classes\\def\\UsersView' => __DIR__ . '/../..' . '/Classes/Def/usersview.class.php',
+        'Classes\\User\\Users' => __DIR__ . '/../..' . '/classes/def/users.class.php',
+        'Classes\\View\\UsersView' => __DIR__ . '/../..' . '/classes/def/usersview.class.php',
+        'Classes\\abc\\Calc' => __DIR__ . '/../..' . '/classes/abc/calc.class.php',
+        'Classes\\abc\\Person' => __DIR__ . '/../..' . '/classes/abc/inheritance.class.php',
+        'Classes\\abc\\Pet' => __DIR__ . '/../..' . '/classes/abc/inheritance.class.php',
+        'Classes\\controller\\UsersContr' => __DIR__ . '/../..' . '/classes/def/userscontr.class.php',
+        'Classes\\def\\Dbh' => __DIR__ . '/../..' . '/classes/def/dbh.class.php',
+        'Classes\\def\\Person' => __DIR__ . '/../..' . '/classes/def/person.class.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 

@@ -1,6 +1,7 @@
 <?php
-namespace Classes\def;
-    class UsersView extends Users
+namespace Classes\View;
+
+    class UsersView extends \classes\User\Users
     {
         public function showUser($login)
         {

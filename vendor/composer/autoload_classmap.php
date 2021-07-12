@@ -6,13 +6,13 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Classes\\abc\\Calc' => $baseDir . '/Classes/Abc/calc.class.php',
-    'Classes\\abc\\Person' => $baseDir . '/Classes/Abc/inheritance.class.php',
-    'Classes\\abc\\Pet' => $baseDir . '/Classes/Abc/inheritance.class.php',
-    'Classes\\def\\Dbh' => $baseDir . '/Classes/Def/dbh.class.php',
-    'Classes\\def\\Person' => $baseDir . '/Classes/Def/person.class.php',
-    'Classes\\def\\Users' => $baseDir . '/Classes/Def/users.class.php',
-    'Classes\\def\\UsersContr' => $baseDir . '/Classes/Def/userscontr.class.php',
-    'Classes\\def\\UsersView' => $baseDir . '/Classes/Def/usersview.class.php',
+    'Classes\\User\\Users' => $baseDir . '/classes/def/users.class.php',
+    'Classes\\View\\UsersView' => $baseDir . '/classes/def/usersview.class.php',
+    'Classes\\abc\\Calc' => $baseDir . '/classes/abc/calc.class.php',
+    'Classes\\abc\\Person' => $baseDir . '/classes/abc/inheritance.class.php',
+    'Classes\\abc\\Pet' => $baseDir . '/classes/abc/inheritance.class.php',
+    'Classes\\controller\\UsersContr' => $baseDir . '/classes/def/userscontr.class.php',
+    'Classes\\def\\Dbh' => $baseDir . '/classes/def/dbh.class.php',
+    'Classes\\def\\Person' => $baseDir . '/classes/def/person.class.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
 );
